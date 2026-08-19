@@ -42,3 +42,17 @@ body{
   animation: shimmer 3s linear infinite;
 }
 @keyframes shimmer{ 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+/* Accessibility & responsive helpers */
+img{max-width:100%;height:auto;display:block}
+:focus{outline:2px solid rgba(99,102,241,0.8);outline-offset:2px}
+
+/* Improve tappable areas on mobile */
+button,a{touch-action:manipulation}
+
+/* Small-screen typographic adjustments */
+@media (max-width:640px){
+  h1{font-size:1.75rem}
+  .max-w-6xl{padding-left:1rem;padding-right:1rem}
+}
+

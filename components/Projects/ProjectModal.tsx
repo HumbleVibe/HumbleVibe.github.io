@@ -12,10 +12,10 @@ type Props = {
 export default function ProjectModal({ open, onClose, title, body }: Props){
   if(!open) return null
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute inset-0 bg-black/60" onClick={onClose} />
 
-      <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="glass rounded-2xl p-6 z-60 max-w-3xl w-full">
+      <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="glass rounded-2xl p-6 z-60 max-w-3xl w-full max-h-[80vh] overflow-auto">
         <div className="flex items-start justify-between">
           <h3 className="text-lg font-semibold">{title}</h3>
           <button aria-label="close" onClick={onClose} className="text-slate-400">✕</button>
