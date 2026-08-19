@@ -39,9 +39,13 @@ body{
 .badge-shimmer{
   background: linear-gradient(90deg, rgba(255,255,255,0.05), rgba(255,255,255,0.12), rgba(255,255,255,0.05));
   background-size: 200% 100%;
-  animation: shimmer 3s linear infinite;
+  animation: shimmer 4.8s ease-in-out infinite;
+  will-change: background-position;
 }
-@keyframes shimmer{ 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+@keyframes shimmer{
+  0%{background-position:200% 0}
+  100%{background-position:-200% 0}
+}
 
 /* Accessibility & responsive helpers */
 img{max-width:100%;height:auto;display:block}
@@ -55,4 +59,3 @@ button,a{touch-action:manipulation}
   h1{font-size:1.75rem}
   .max-w-6xl{padding-left:1rem;padding-right:1rem}
 }
-
