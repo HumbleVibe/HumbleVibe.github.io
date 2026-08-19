@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>John Davis — Engineering High-Impact Web Apps</title>
+  <meta name="description" content="John Davis — Base44 Certified Partner, full-stack engineer" />
+  <style>
+    :root{--bg:#0A0D14;--fg:#E6EEF3;--cyan:#06B6D4;--indigo:#6366F1}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Arial}
+    body{background:radial-gradient(800px 400px at 10% 10%, rgba(6,182,212,0.06), transparent), radial-gradient(600px 300px at 90% 90%, rgba(99,102,241,0.04), transparent), var(--bg);color:var(--fg);display:flex;align-items:center;justify-content:center}
+    .card{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(8,12,20,0.6);border:1px solid rgba(255,255,255,0.04);padding:32px;border-radius:16px;max-width:900px;width:calc(100% - 48px)}
+    .logo{display:flex;align-items:center;gap:14px}
+    .monogram{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--indigo));display:flex;align-items:center;justify-content:center;font-weight:800;color:#020204}
+    h1{font-size:28px;margin:12px 0}
+    p{color:rgba(230,238,243,0.85);margin:8px 0 18px}
+    .cta{display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(90deg,var(--cyan),var(--indigo));color:#041018;font-weight:700;text-decoration:none}
+    .cols{display:flex;gap:20px;margin-top:18px}
+    .glass{flex:1;min-height:120px;padding:14px;border-radius:12px;background:rgba(12,16,28,0.55);border:1px solid rgba(255,255,255,0.03)}
+    .small{font-size:13px;color:rgba(230,238,243,0.75)}
+    footer{margin-top:18px;color:rgba(230,238,243,0.6);font-size:13px}
+    @media(max-width:720px){.cols{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <div class="monogram">JD</div>
+      <div>
+        <div style="font-weight:700">John Davis</div>
+        <div class="small">Base44 Certified Partner · AI App Architect</div>
+      </div>
+    </div>
+
+    <h1>Engineering High‑Impact Web Apps & Intelligent Systems</h1>
+    <p>Turning complex workflows into fast, scalable, production-ready applications. Explore projects, capabilities, and work with John on Base44.</p>
+
+    <a class="cta" href="https://app.base44.com/@john-davis-2" target="_blank" rel="noreferrer">Work With Me on Base44</a>
+
+    <div class="cols">
+      <div class="glass">
+        <strong>Featured</strong>
+        <div class="small" style="margin-top:8px">ServeLog — Volunteer & Board Tracking. Eliminates 90% of nonprofit admin overhead.</div>
+      </div>
+      <div class="glass">
+        <strong>Capabilities</strong>
+        <div class="small" style="margin-top:8px">Rapid prototyping, Base44 integrations, AI automation, production UI & performance.</div>
+      </div>
+    </div>
+
+    <footer>© <span id="year"></span> John Davis · Hosted on GitHub Pages</footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
